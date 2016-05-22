@@ -1,4 +1,4 @@
-package com.yangjianzhou.bean;
+package com.yangjianzhou.util;
 
 import com.google.common.collect.Lists;
 import com.yangjianzhou.dto.TradeRecordDTO;

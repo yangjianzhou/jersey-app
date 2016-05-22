@@ -3,7 +3,7 @@ package com.yangjianzhou.resource;
 import com.google.common.collect.Lists;
 import com.sun.jersey.api.core.InjectParam;
 import com.yangjianzhou.bean.ProductPaginationBean;
-import com.yangjianzhou.bean.ReadFileThread;
+import com.yangjianzhou.util.ReadFileThread;
 import com.yangjianzhou.bean.ResultGson;
 import com.yangjianzhou.dto.ProductDTO;
 import com.yangjianzhou.service.ProductService;

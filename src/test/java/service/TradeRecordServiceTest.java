@@ -1,7 +1,7 @@
 package test.java.service;
 
 import com.google.common.collect.Lists;
-import com.yangjianzhou.bean.ReadFileThread;
+import com.yangjianzhou.util.ReadFileThread;
 import com.yangjianzhou.service.TradeRecordService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

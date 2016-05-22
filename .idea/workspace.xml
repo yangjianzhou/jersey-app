@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b482f16d-f6f9-4b1e-9b0f-3227a6e4a4cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/BigFileTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/bean/ReadFileThread.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dataSource.xml" afterPath="$PROJECT_DIR$/src/main/resources/dataSource.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/service/TradeRecordServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/service/TradeRecordServiceTest.java" />
     </list>
     <ignored path="jersey-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,44 +28,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TradeRecordDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/TradeRecordDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/UserDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GsonJsonProvider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/jersey/GsonJsonProvider.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#792#793#0" expanded="false" />
+                <element signature="e#841#842#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductApiResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-234">
+              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BigFileTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/BigFileTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductApiResource.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java">
+      <file leaf-file-name="ReadFileThread.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +109,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="756">
               <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +121,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +133,25 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="738">
               <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2851#2870#0" expanded="false" />
+                <element signature="e#3001#3015#0" expanded="false" />
+                <element signature="e#3612#3613#0" expanded="false" />
+                <element signature="e#3646#3647#0" expanded="false" />
+                <element signature="e#3688#3689#0" expanded="false" />
+                <element signature="e#3726#3727#0" expanded="false" />
+                <element signature="e#3760#3761#0" expanded="false" />
+                <element signature="e#3796#3797#0" expanded="false" />
+                <element signature="e#3840#3841#0" expanded="false" />
+                <element signature="e#3882#3883#0" expanded="false" />
+                <element signature="e#4231#4232#0" expanded="false" />
+                <element signature="e#4286#4287#0" expanded="false" />
+                <element signature="e#5214#5215#0" expanded="false" />
+                <element signature="e#5258#5259#0" expanded="false" />
+                <element signature="e#5307#5308#0" expanded="false" />
+                <element signature="e#5396#5397#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,6 +201,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/EnumUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ListPartitionPolishingUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/BigFileTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java" />
       </list>
     </option>
   </component>
@@ -283,11 +307,149 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sqlmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="yangjianzhou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yangjianzhou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yangjianzhou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jersey-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yangjianzhou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bean" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,6 +465,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jersey-web" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yangjianzhou.util" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
@@ -559,14 +724,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="24" width="1869" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -597,7 +762,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#349#350#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+            <element signature="e#419#420#0" expanded="false" />
+            <element signature="e#455#456#0" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#567#568#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
+            <element signature="e#723#724#0" expanded="false" />
+            <element signature="e#759#760#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -605,7 +783,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#311#312#0" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#558#559#0" expanded="false" />
+            <element signature="e#591#592#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -613,7 +804,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#841#842#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,7 +850,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -663,7 +860,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -671,7 +870,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2851#2870#0" expanded="false" />
+            <element signature="e#3001#3015#0" expanded="false" />
+            <element signature="e#3612#3613#0" expanded="false" />
+            <element signature="e#3646#3647#0" expanded="false" />
+            <element signature="e#3688#3689#0" expanded="false" />
+            <element signature="e#3726#3727#0" expanded="false" />
+            <element signature="e#3760#3761#0" expanded="false" />
+            <element signature="e#3796#3797#0" expanded="false" />
+            <element signature="e#3840#3841#0" expanded="false" />
+            <element signature="e#3882#3883#0" expanded="false" />
+            <element signature="e#4231#4232#0" expanded="false" />
+            <element signature="e#4286#4287#0" expanded="false" />
+            <element signature="e#5214#5215#0" expanded="false" />
+            <element signature="e#5258#5259#0" expanded="false" />
+            <element signature="e#5307#5308#0" expanded="false" />
+            <element signature="e#5396#5397#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -719,7 +936,7 @@
         <state relative-caret-position="252">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -796,14 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/bean/ReadFileThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/BaseDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -824,7 +1033,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#349#350#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+            <element signature="e#419#420#0" expanded="false" />
+            <element signature="e#455#456#0" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#567#568#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
+            <element signature="e#723#724#0" expanded="false" />
+            <element signature="e#759#760#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -832,7 +1054,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#311#312#0" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#558#559#0" expanded="false" />
+            <element signature="e#591#592#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -840,7 +1075,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#841#842#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,7 +1111,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -880,7 +1121,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -888,17 +1131,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2851#2870#0" expanded="false" />
+            <element signature="e#3001#3015#0" expanded="false" />
+            <element signature="e#3612#3613#0" expanded="false" />
+            <element signature="e#3646#3647#0" expanded="false" />
+            <element signature="e#3688#3689#0" expanded="false" />
+            <element signature="e#3726#3727#0" expanded="false" />
+            <element signature="e#3760#3761#0" expanded="false" />
+            <element signature="e#3796#3797#0" expanded="false" />
+            <element signature="e#3840#3841#0" expanded="false" />
+            <element signature="e#3882#3883#0" expanded="false" />
+            <element signature="e#4231#4232#0" expanded="false" />
+            <element signature="e#4286#4287#0" expanded="false" />
+            <element signature="e#5214#5215#0" expanded="false" />
+            <element signature="e#5258#5259#0" expanded="false" />
+            <element signature="e#5307#5308#0" expanded="false" />
+            <element signature="e#5396#5397#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="-234">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/BigFileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
