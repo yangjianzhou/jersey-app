@@ -52,10 +52,10 @@ public class ProductApiResource {
         List<String> fileNames = Lists.newArrayList("dailyIncomeFile.txt_0", "dailyIncomeFile.txt_1", "dailyIncomeFile.txt_2", "dailyIncomeFile.txt_3",
                 "dailyIncomeFile.txt_4", "dailyIncomeFile.txt_5", "dailyIncomeFile.txt_6", "dailyIncomeFile.txt_7",
                 "dailyIncomeFile.txt_8", "dailyIncomeFile.txt_9", "dailyIncomeFile.txt_10");
-        String pathPrefix = "/home/yangjianzhou/Test";
+        String pathPrefix = "/home/yangjianzhou/Test/";
 
         for (String fileName : fileNames) {
-            taskExecutor.execute(new ReadFileThread(pathPrefix + "/" + fileName, tradeRecordService));
+            taskExecutor.execute(new ReadFileThread(pathPrefix + fileName, tradeRecordService));
         }
         return "true";
     }

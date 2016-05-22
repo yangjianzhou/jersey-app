@@ -81,9 +81,9 @@ public class BigFileTest {
     public static String buildLineContent(int lineNum) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(lineNum);
-        stringBuilder.append('-');
+        stringBuilder.append('|');
         stringBuilder.append(lineNum+4);
-        stringBuilder.append('-');
+        stringBuilder.append('|');
         stringBuilder.append(lineNum+0.2);
         stringBuilder.append("\n");
         return stringBuilder.toString();

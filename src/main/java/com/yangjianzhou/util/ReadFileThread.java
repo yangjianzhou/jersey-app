@@ -1,5 +1,6 @@
 package com.yangjianzhou.util;
 
+import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import com.yangjianzhou.dto.TradeRecordDTO;
 import com.yangjianzhou.service.TradeRecordService;
@@ -34,8 +35,8 @@ public class ReadFileThread implements Runnable {
             List<TradeRecordDTO> tradeRecordDTOList = new ArrayList<>();
             long startTime = System.currentTimeMillis();
             while ((lineContent = bufferedReader.readLine()) != null) {
-                List<String> contents = Lists.newArrayList(lineContent.split("-"));
-               // List<String> contents = Splitter.on('|').trimResults().omitEmptyStrings().splitToList("1111|2323|23423");
+                //List<String> contents = Lists.newArrayList(lineContent.split("-"));
+                List<String> contents = Splitter.on('|').trimResults().omitEmptyStrings().splitToList(lineContent);
                 lineCount++;
                 TradeRecordDTO tradeRecordDTO = buildTradeRecord(contents);
                 tradeRecordDTOList.add(tradeRecordDTO);
