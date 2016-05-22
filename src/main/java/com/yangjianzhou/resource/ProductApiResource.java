@@ -2,7 +2,6 @@ package com.yangjianzhou.resource;
 
 import com.google.common.collect.Lists;
 import com.sun.jersey.api.core.InjectParam;
-import com.sun.jersey.spi.inject.Inject;
 import com.yangjianzhou.bean.ProductPaginationBean;
 import com.yangjianzhou.bean.ReadFileThread;
 import com.yangjianzhou.bean.ResultGson;
@@ -10,7 +9,6 @@ import com.yangjianzhou.dto.ProductDTO;
 import com.yangjianzhou.service.ProductService;
 import com.yangjianzhou.service.TradeRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
 
