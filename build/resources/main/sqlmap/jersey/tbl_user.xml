@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="tb_user">
+    <resultMap id="BaseResultMap" class="com.yangjianzhou.dto.ProductDTO">
+        <result column="ID" property="id" jdbcType="DECIMAL" />
+        <result column="CREATED_AT" property="createdAt" jdbcType="TIMESTAMP" />
+        <result column="CREATED_BY" property="createdBy" jdbcType="DECIMAL" />
+        <result column="UPDATED_AT" property="updatedAt" jdbcType="TIMESTAMP" />
+        <result column="UPDATED_BY" property="updatedBy" jdbcType="VARCHAR" />
+        <result column="NAME" property="name" jdbcType="VARCHAR" />
+        <result column="TYPE" property="type" jdbcType="DECIMAL" />
+        <result column="VERSION" property="version" jdbcType="DECIMAL" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        <![CDATA[
+            ID, CREATED_AT, CREATED_BY, UPDATED_AT, UPDATED_BY, NAME , TYPE ,VERSION
+        ]]>
+    </sql>
+
+    <insert id="insert" parameterClass="com.yangjianzhou.dto.ProductDTO">
+        insert into tb_product(CREATED_AT , CREATED_BY , UPDATED_AT , UPDATED_BY , NAME , TYPE ,VERSION)
+        values( now(), #createdBy#,now(),#updatedBy# , #name# , #type# , 1)
+    </insert>
+
+</sqlMap>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean id="dataSource" destroy-method="close" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="${jersey.db.driver}"/>
+        <property name="url" value="${jersey.db.url}"/>
+        <property name="username" value="${jersey.db.username}"/>
+        <property name="password" value="${jersey.db.password}"/>
+        <property name="maxTotal" value="20" />
+        <property name="maxIdle" value="20"/>
+        <property name="minIdle" value="0"/>
+        <property name="initialSize" value="10"/>
+        <property name="maxWaitMillis" value="5000"/>
+        <!--是否从连接池中取出连接前进行检验,如果检验失败, 则从池中去除连接并尝试取出另一个。建议开启-->
+        <property name="testOnBorrow" value="false"/>
+        <!--是否在归还到连接池中前进行检验，建议关闭此项-->
+        <property name="testOnReturn" value="false"/>
+        <!--是否被空闲连接回收器(如果有)进行检验.如果检测失败,则连接将被从池中去除。建议开启-->
+        <property name="testWhileIdle" value="true"/>
+        <property name="timeBetweenEvictionRunsMillis" value="10000"/>
+        <!--每次空闲连接回收器线程(如果有)运行时检查的连接数量，默认3，建议3-->
+        <property name="numTestsPerEvictionRun" value="3"/>
+        <!--连接在池中保持空闲而不被空闲连接回收器线程(如果有)回收的最小时间值，默认1000 * 60 * 30，单位milliseconds(毫秒)，建议使用默认值（可以不配此项）-->
+        <property name="minEvictableIdleTimeMillis" value="1800000"/>
+
+    </bean>
+</beans>

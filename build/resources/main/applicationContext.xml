@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd
+             http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+            http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <!--开启注解功能:激活已经在spring容器中注册的bean，作用在：@Required，@Autowired，@PostConstruct，@PreDestroy，@Resource，@WebServiceRef等-->
+    <!--该标签不能使得@Transactional/@TransactionAttribute生效，@Transactional/@TransactionAttribute可以使用annotation-driven-->
+    <context:annotation-config/>
+
+    <!-- 扫描package，以完成Bean创建和自动依赖注入的功能：除了包含annotation-config的功能外，还可以向spring容器中注册，包括@Component/@Repository/@Service/@Controller-->
+    <context:component-scan base-package="com.yangjianzhou"/>
+
+    <!--使得@AspectJ风格的AOP可以起作用。spring的AOP有两种方式实现：jdk的动态代理和cglib的动态代理，jdk是基于接口的方式，cglib是基于类继承的方式-->
+    <!--默认值为false，即通过jdk的动态代理来实现spring的代理，cglib的方式比jdk方式产生的动态代理类在方法调用方面性能好，spring容器中bean一般为singleton-->
+    <!--因此，一般将这里配置为-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+    <!--使得@Transactional/@TransactionAttribute 的注解生效-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocation" value="classpath:/sqlmap/sqlMapConfig_jersey.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:jerseyTest.properties"/>
+    </bean>
+
+    <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor"
+          destroy-method="shutdown">
+        <property name="corePoolSize" value="10"/>
+        <property name="keepAliveSeconds" value="30000"/>
+        <property name="maxPoolSize" value="30"/>
+        <property name="queueCapacity" value="200"/>
+    </bean>
+
+</beans>
