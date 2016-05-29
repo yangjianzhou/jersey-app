@@ -38,6 +38,7 @@ public class ListPartitionPolishingUtil {
 
     /**
      * 对所给的列表按照给定的分区大小进行分区
+     *
      * @param originalList
      * @param splitSize
      * @param <T>
@@ -54,7 +55,7 @@ public class ListPartitionPolishingUtil {
         }
 
         // 分区
-        List<List<T>> splitList = Lists.partition(Lists.<T> newLinkedList(Sets.newHashSet(originalList.iterator())),
+        List<List<T>> splitList = Lists.partition(Lists.<T>newLinkedList(Sets.newHashSet(originalList.iterator())),
                 targetSplitSize);
         List<T> lastSubList = splitList.get(splitList.size() - 1);
 

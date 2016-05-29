@@ -5,17 +5,17 @@ import com.yangjianzhou.dao.enums.ProductType;
 /**
  * Created by yangjianzhou on 16-4-13.
  */
-public class ProductDTO extends BaseDTO{
+public class ProductDTO extends BaseDTO {
 
     /**
      * 产品名字
      */
-    private String name ;
+    private String name;
 
     /**
      * 产品类型
      */
-    private ProductType type ;
+    private ProductType type;
 
     public String getName() {
         return name;

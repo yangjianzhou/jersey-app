@@ -5,11 +5,11 @@ package com.yangjianzhou.bean;
  */
 public class ResultGson<T> {
 
-    private String resCode ;
+    private String resCode;
 
-    private String resMsg ;
+    private String resMsg;
 
-    private T data ;
+    private T data;
 
 
     public ResultGson(String resCode, String resMsg, T data) {

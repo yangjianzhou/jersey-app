@@ -5,22 +5,22 @@ import java.math.BigDecimal;
 /**
  * Created by yangjianzhou on 16-4-13.
  */
-public class TradeRecordDTO extends BaseDTO{
+public class TradeRecordDTO extends BaseDTO {
 
     /**
      * 用户
      */
-    private int userId ;
+    private int userId;
 
     /**
      * 产品
      */
-    private int productId ;
+    private int productId;
 
     /**
      * 订单金额
      */
-    private BigDecimal amount ;
+    private BigDecimal amount;
 
     public int getUserId() {
         return userId;

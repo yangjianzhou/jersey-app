@@ -2,12 +2,13 @@ package com.yangjianzhou.resource;
 
 import com.google.common.collect.Lists;
 import com.sun.jersey.api.core.InjectParam;
+import com.yangjianzhou.bean.BatchType;
 import com.yangjianzhou.bean.ProductPaginationBean;
-import com.yangjianzhou.util.ReadFileThread;
 import com.yangjianzhou.bean.ResultGson;
 import com.yangjianzhou.dto.ProductDTO;
 import com.yangjianzhou.service.ProductService;
 import com.yangjianzhou.service.TradeRecordService;
+import com.yangjianzhou.util.ReadFileThread;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
@@ -46,16 +47,40 @@ public class ProductApiResource {
     }
 
     @GET
-    @Path("multi-batch-insert")
+    @Path("ibatis-batch-insert")
     @Produces(MediaType.APPLICATION_JSON)
-    public String batchInsert(){
-        List<String> fileNames = Lists.newArrayList("dailyIncomeFile.txt_0", "dailyIncomeFile.txt_1", "dailyIncomeFile.txt_2", "dailyIncomeFile.txt_3",
-                "dailyIncomeFile.txt_4", "dailyIncomeFile.txt_5", "dailyIncomeFile.txt_6", "dailyIncomeFile.txt_7",
-                "dailyIncomeFile.txt_8", "dailyIncomeFile.txt_9", "dailyIncomeFile.txt_10");
+    public String ibatisBatchInsert() {
+        List<String> fileNames = Lists.newArrayList("dailyIncomeFile.txt_0");
         String pathPrefix = "/home/yangjianzhou/Test/";
 
         for (String fileName : fileNames) {
-            taskExecutor.execute(new ReadFileThread(pathPrefix + fileName, tradeRecordService));
+            taskExecutor.execute(new ReadFileThread(pathPrefix + fileName, tradeRecordService, BatchType.IBATIS));
+        }
+        return "true";
+    }
+
+    @GET
+    @Path("spring-batch-insert")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String springBatchInsert() {
+        List<String> fileNames = Lists.newArrayList("dailyIncomeFile.txt_1");
+        String pathPrefix = "/home/yangjianzhou/Test/";
+
+        for (String fileName : fileNames) {
+            taskExecutor.execute(new ReadFileThread(pathPrefix + fileName, tradeRecordService, BatchType.SPRING));
+        }
+        return "true";
+    }
+
+    @GET
+    @Path("jdbc-batch-insert")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String jdbcBatchInsert() {
+        List<String> fileNames = Lists.newArrayList("dailyIncomeFile.txt_2");
+        String pathPrefix = "/home/yangjianzhou/Test/";
+
+        for (String fileName : fileNames) {
+            taskExecutor.execute(new ReadFileThread(pathPrefix + fileName, tradeRecordService, BatchType.JDBC));
         }
         return "true";
     }
@@ -89,6 +114,14 @@ public class ProductApiResource {
     @Produces(MediaType.APPLICATION_JSON)
     public String paginationQuery() {
         tradeRecordService.parseFile();
+        return "success";
+    }
+
+    @GET
+    @Path("generate-file")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String generateFile() {
+        tradeRecordService.generateFile();
         return "success";
     }
 

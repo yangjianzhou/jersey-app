@@ -25,19 +25,19 @@ public class EnumUtils {
 
 
     public static <T extends Enum<T>> T parseEnum(Class<T> enumType, int value) {
-        if(!EnumValue.class.isAssignableFrom(enumType)){
+        if (!EnumValue.class.isAssignableFrom(enumType)) {
             throw new IllegalArgumentException();
         }
-        try{
+        try {
             Enum<T>[] values = enumType.getEnumConstants();
-            for(Enum<T> item : values){
-                if(((EnumValue) item).getValue()==value){
-                    return (T)item ;
+            for (Enum<T> item : values) {
+                if (((EnumValue) item).getValue() == value) {
+                    return (T) item;
                 }
             }
-        }catch (Exception exp){
+        } catch (Exception exp) {
 
         }
-        return  null ;
+        return null;
     }
 }

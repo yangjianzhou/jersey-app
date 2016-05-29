@@ -3,22 +3,22 @@ package com.yangjianzhou.dto;
 /**
  * Created by yangjianzhou on 16-4-13.
  */
-public class UserDTO extends BaseDTO{
+public class UserDTO extends BaseDTO {
 
     /**
      * 用户名
      */
-    private String name ;
+    private String name;
 
     /**
      * 地址
      */
-    private String address ;
+    private String address;
 
     /**
      * 手机号
      */
-    private String mobile ;
+    private String mobile;
 
     public String getName() {
         return name;

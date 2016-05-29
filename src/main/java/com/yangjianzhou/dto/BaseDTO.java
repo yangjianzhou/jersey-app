@@ -7,17 +7,17 @@ import java.util.Date;
  */
 public class BaseDTO {
 
-    private int id ;
+    private int id;
 
-    private String createdBy ;
+    private String createdBy;
 
-    private Date createdAt ;
+    private Date createdAt;
 
-    private String updatedBy ;
+    private String updatedBy;
 
-    private Date updatedAt ;
+    private Date updatedAt;
 
-    private int version ;
+    private int version;
 
     public int getVersion() {
         return version;

@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * Created by yangjianzhou on 16-4-11.
  */
-public abstract class BaseDAO extends QuerySqlExecutor{
+public abstract class BaseDAO extends QuerySqlExecutor {
 
     protected abstract SqlMapClientTemplate getSqlMapClientTemplate();
 
@@ -59,6 +59,7 @@ public abstract class BaseDAO extends QuerySqlExecutor{
     protected <T> List<T> queryForList(String statement, Object param) {
         return this.getSqlMapClientTemplate().queryForList(generate(statement), param);
     }
+
     /**
      * 批量插入
      *
@@ -91,6 +92,7 @@ public abstract class BaseDAO extends QuerySqlExecutor{
             }
         });
     }
+
     /**
      * 可以批量指定的动作
      *

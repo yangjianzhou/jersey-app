@@ -2,17 +2,17 @@
 <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
 <sqlMap namespace="tb_product_one">
     <resultMap id="BaseResultMap" class="com.yangjianzhou.dto.ProductDTO">
-        <result column="ID" property="id" jdbcType="DECIMAL" />
-        <result column="CREATED_AT" property="createdAt" jdbcType="TIMESTAMP" />
-        <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR" />
-        <result column="UPDATED_AT" property="updatedAt" jdbcType="TIMESTAMP" />
-        <result column="UPDATED_BY" property="updatedBy" jdbcType="VARCHAR" />
-        <result column="NAME" property="name" jdbcType="VARCHAR" />
-        <result column="TYPE" property="type" jdbcType="DECIMAL" />
-        <result column="VERSION" property="version" jdbcType="DECIMAL" />
+        <result column="ID" property="id" jdbcType="DECIMAL"/>
+        <result column="CREATED_AT" property="createdAt" jdbcType="TIMESTAMP"/>
+        <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR"/>
+        <result column="UPDATED_AT" property="updatedAt" jdbcType="TIMESTAMP"/>
+        <result column="UPDATED_BY" property="updatedBy" jdbcType="VARCHAR"/>
+        <result column="NAME" property="name" jdbcType="VARCHAR"/>
+        <result column="TYPE" property="type" jdbcType="DECIMAL"/>
+        <result column="VERSION" property="version" jdbcType="DECIMAL"/>
     </resultMap>
 
-    <sql id="Base_Column_List" >
+    <sql id="Base_Column_List">
         <![CDATA[
             ID, CREATED_AT, CREATED_BY, UPDATED_AT, UPDATED_BY, NAME , TYPE ,VERSION
         ]]>
@@ -26,7 +26,7 @@
         limit #offset#, #pageSize#
     </select>
 
-    <select id="count" resultClass="java.lang.Integer" >
+    <select id="count" resultClass="java.lang.Integer">
         select
         count(*)
         from tb_product_one

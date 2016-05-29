@@ -12,8 +12,8 @@ import org.springframework.stereotype.Service;
 public class BaseService {
 
     @Autowired
-    protected ProductDAO productDAO ;
+    protected ProductDAO productDAO;
 
     @Autowired
-    protected ProductOneDAO productOneDAO ;
+    protected ProductOneDAO productOneDAO;
 }

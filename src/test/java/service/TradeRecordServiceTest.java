@@ -1,8 +1,9 @@
-package test.java.service;
+package service;
 
 import com.google.common.collect.Lists;
-import com.yangjianzhou.util.ReadFileThread;
+import com.yangjianzhou.bean.BatchType;
 import com.yangjianzhou.service.TradeRecordService;
+import com.yangjianzhou.util.ReadFileThread;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
@@ -28,7 +29,7 @@ public class TradeRecordServiceTest extends BaseServiceTest {
         String pathPrefix = "/home/yangjianzhou/Test";
 
         for (String fileName : fileNames) {
-            taskExecutor.execute(new ReadFileThread(pathPrefix + "/" + fileName, tradeRecordService));
+            taskExecutor.execute(new ReadFileThread(pathPrefix + "/" + fileName, tradeRecordService, BatchType.IBATIS));
         }
     }
 

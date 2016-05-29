@@ -79,18 +79,18 @@ public class ProductService extends BaseService {
         }
 
         if (firstTotalPage < pageNo) {
-            ResultGson<ProductPaginationBean> productPaginationFirstResultGson = paginationSecondQuery(pageNo - firstTotalPage -1, pageSize);
+            ResultGson<ProductPaginationBean> productPaginationFirstResultGson = paginationSecondQuery(pageNo - firstTotalPage - 1, pageSize);
             ResultGson<ProductPaginationBean> productPaginationSecondResultGson = paginationSecondQuery(pageNo - firstTotalPage, pageSize);
-            List<ProductDTO> mergedProductList = mergeDataAfterRemoveDataOfFirstList(pageSize-firstMode, productPaginationFirstResultGson.getData().getProductDTOList(), productPaginationSecondResultGson.getData().getProductDTOList());
+            List<ProductDTO> mergedProductList = mergeDataAfterRemoveDataOfFirstList(pageSize - firstMode, productPaginationFirstResultGson.getData().getProductDTOList(), productPaginationSecondResultGson.getData().getProductDTOList());
             ProductPaginationBean productPaginationBean = new ProductPaginationBean(totalCount, mergedProductList);
             productPaginationResultGson.setData(productPaginationBean);
             return productPaginationResultGson;
         }
 
-        if (firstTotalPage== pageNo) {
+        if (firstTotalPage == pageNo) {
             paginationOneResultGson = paginationOneQuery(pageNo, pageSize);
             paginationTwoBeanResultGson = paginationSecondQuery(0, pageSize);
-            List<ProductDTO> productDTOList = mergeDataDeleteSomeIfPossible(paginationOneResultGson.getData().getProductDTOList() , paginationTwoBeanResultGson.getData().getProductDTOList() , pageSize);
+            List<ProductDTO> productDTOList = mergeDataDeleteSomeIfPossible(paginationOneResultGson.getData().getProductDTOList(), paginationTwoBeanResultGson.getData().getProductDTOList(), pageSize);
             ProductPaginationBean productPaginationBean = new ProductPaginationBean(totalCount, productDTOList);
             productPaginationResultGson.setData(productPaginationBean);
             return productPaginationResultGson;

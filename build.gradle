@@ -2,7 +2,7 @@ apply plugin: "java"
 apply plugin: "idea"
 apply plugin: "eclipse"
 apply plugin: "eclipse-wtp"
-apply plugin : 'jetty'
+apply plugin: 'jetty'
 
 idea {
     module {
@@ -52,7 +52,7 @@ dependencies {
 
 }
 
-jettyRun{
+jettyRun {
     httpPort 6094
     contextPath project.name
     scanIntervalSeconds 0

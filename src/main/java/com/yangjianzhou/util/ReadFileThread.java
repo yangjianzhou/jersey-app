@@ -1,7 +1,7 @@
 package com.yangjianzhou.util;
 
 import com.google.common.base.Splitter;
-import com.google.common.collect.Lists;
+import com.yangjianzhou.bean.BatchType;
 import com.yangjianzhou.dto.TradeRecordDTO;
 import com.yangjianzhou.service.TradeRecordService;
 
@@ -20,9 +20,12 @@ public class ReadFileThread implements Runnable {
 
     private TradeRecordService tradeRecordService;
 
-    public ReadFileThread(String fileName, TradeRecordService tradeRecordService) {
+    private BatchType batchType;
+
+    public ReadFileThread(String fileName, TradeRecordService tradeRecordService, BatchType batchType) {
         this.fileName = fileName;
         this.tradeRecordService = tradeRecordService;
+        this.batchType = batchType;
     }
 
     @Override
@@ -36,18 +39,18 @@ public class ReadFileThread implements Runnable {
             long startTime = System.currentTimeMillis();
             while ((lineContent = bufferedReader.readLine()) != null) {
                 //List<String> contents = Lists.newArrayList(lineContent.split("-"));
-                List<String> contents = Splitter.on('|').trimResults().omitEmptyStrings().splitToList(lineContent);
+                List<String> contents = Splitter.on('-').trimResults().omitEmptyStrings().splitToList(lineContent);
                 lineCount++;
                 TradeRecordDTO tradeRecordDTO = buildTradeRecord(contents);
                 tradeRecordDTOList.add(tradeRecordDTO);
                 if (lineCount == 200) {
                     lineCount = 0;
-                    tradeRecordService.batchInsert(tradeRecordDTOList);
+                    batchInsert(tradeRecordDTOList, batchType);
                     tradeRecordDTOList.clear();
                 }
             }
             if (tradeRecordDTOList != null) {
-                tradeRecordService.batchInsert(tradeRecordDTOList);
+                batchInsert(tradeRecordDTOList, batchType);
             }
             long endTime = System.currentTimeMillis();
             System.out.println("Thread : " + Thread.currentThread().getName() + ", time spend : " + (endTime - startTime));
@@ -56,6 +59,18 @@ public class ReadFileThread implements Runnable {
             System.out.println("Error======================================");
         } finally {
         }
+    }
+
+    private void batchInsert(List<TradeRecordDTO> tradeRecordDTOs, BatchType batchType) {
+        if (batchType == BatchType.IBATIS) {
+            tradeRecordService.batchInsertWithIbatis(tradeRecordDTOs);
+            return;
+        }else if(batchType ==BatchType.SPRING){
+            tradeRecordService.batchInsertWithSpring(tradeRecordDTOs);
+            return;
+        }
+        tradeRecordService.batchInsertWithJDBC(tradeRecordDTOs);
+
     }
 
     public TradeRecordDTO buildTradeRecord(List<String> contents) {

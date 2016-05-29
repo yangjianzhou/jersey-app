@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class ProductPaginationBean {
 
-    private int totalCount ;
+    private int totalCount;
 
     private List<ProductDTO> productDTOList;
 

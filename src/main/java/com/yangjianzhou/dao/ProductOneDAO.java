@@ -14,15 +14,15 @@ import java.util.Map;
 @Repository
 public class ProductOneDAO extends AbstractJerseyDAO {
 
-    public List<ProductDTO> paginationSelect(int pageNo , int pageSize){
-        Map<String , Object> params = new HashMap<String , Object>();
-        params.put("offset" , pageNo * pageSize);
-        params.put("pageSize" , pageSize);
-        return this.queryForList("tb_product_one.paginationSelect" , params) ;
+    public List<ProductDTO> paginationSelect(int pageNo, int pageSize) {
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("offset", pageNo * pageSize);
+        params.put("pageSize", pageSize);
+        return this.queryForList("tb_product_one.paginationSelect", params);
     }
 
-    public int count(){
-        return this.queryForObject("tb_product_one.count" , null) ;
+    public int count() {
+        return this.queryForObject("tb_product_one.count", null);
     }
 
 }
