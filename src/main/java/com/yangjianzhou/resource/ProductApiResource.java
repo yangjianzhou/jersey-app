@@ -49,6 +49,7 @@ public class ProductApiResource {
     @GET
     @Path("ibatis-batch-insert")
     @Produces(MediaType.APPLICATION_JSON)
+<<<<<<< HEAD
     public String ibatisBatchInsert() {
         List<String> fileNames = Lists.newArrayList("dailyIncomeFile.txt_0");
         String pathPrefix = "/home/yangjianzhou/Test/";
@@ -81,6 +82,16 @@ public class ProductApiResource {
 
         for (String fileName : fileNames) {
             taskExecutor.execute(new ReadFileThread(pathPrefix + fileName, tradeRecordService, BatchType.JDBC));
+=======
+    public String batchInsert(){
+        List<String> fileNames = Lists.newArrayList("dailyIncomeFile.txt_0", "dailyIncomeFile.txt_1", "dailyIncomeFile.txt_2", "dailyIncomeFile.txt_3",
+                "dailyIncomeFile.txt_4", "dailyIncomeFile.txt_5", "dailyIncomeFile.txt_6", "dailyIncomeFile.txt_7",
+                "dailyIncomeFile.txt_8", "dailyIncomeFile.txt_9", "dailyIncomeFile.txt_10");
+        String pathPrefix = "/home/yangjianzhou/Test";
+
+        for (String fileName : fileNames) {
+            taskExecutor.execute(new ReadFileThread(pathPrefix + "/" + fileName, tradeRecordService));
+>>>>>>> parent of 7f8b0b0... add code
         }
         return "true";
     }
