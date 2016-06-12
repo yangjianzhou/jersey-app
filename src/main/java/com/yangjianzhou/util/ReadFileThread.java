@@ -38,8 +38,7 @@ public class ReadFileThread implements Runnable {
             List<TradeRecordDTO> tradeRecordDTOList = new ArrayList<>();
             long startTime = System.currentTimeMillis();
             while ((lineContent = bufferedReader.readLine()) != null) {
-                //List<String> contents = Lists.newArrayList(lineContent.split("-"));
-                List<String> contents = Splitter.on('-').trimResults().omitEmptyStrings().splitToList(lineContent);
+                List<String> contents = Splitter.on("-").trimResults().omitEmptyStrings().splitToList(lineContent);
                 lineCount++;
                 TradeRecordDTO tradeRecordDTO = buildTradeRecord(contents);
                 tradeRecordDTOList.add(tradeRecordDTO);

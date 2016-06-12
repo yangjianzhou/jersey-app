@@ -24,12 +24,13 @@ public class TradeRecordDAO extends AbstractJerseyDAO {
     private SqlMapClient sqlMapClient;
 
     public void batchInsertWithSpring(final List<TradeRecordDTO> tradeRecordDTOList) {
+        final  SqlMapClient mapClient = getSqlMapClientTemplate().getSqlMapClient();
         getSqlMapClientTemplate().execute(new SqlMapClientCallback<Object>() {
             @Override
             public Object doInSqlMapClient(SqlMapExecutor executor) throws SQLException {
                 executor.startBatch();
                 for (TradeRecordDTO tradeRecordDTO : tradeRecordDTOList) {
-                    sqlMapClient.insert("tb_trade_record.insert", tradeRecordDTO);
+                    mapClient.insert("tb_trade_record.insert", tradeRecordDTO);
                 }
                 executor.executeBatch();
                 return null;
