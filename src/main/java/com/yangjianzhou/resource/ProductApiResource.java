@@ -8,15 +8,14 @@ import com.yangjianzhou.bean.ResultGson;
 import com.yangjianzhou.dto.ProductDTO;
 import com.yangjianzhou.service.ProductService;
 import com.yangjianzhou.service.TradeRecordService;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
@@ -37,10 +36,13 @@ public class ProductApiResource {
     @Autowired
     private ThreadPoolTaskExecutor taskExecutor;
 
-    @GET
+    Log log  = LogFactory.getLog("ProductApiResource");
+
+    @POST
     @Path("insert")
     @Produces(MediaType.APPLICATION_JSON)
     public String testInsert() {
+        log.info("Enter [testInsert] ");
         productService.saveProduct();
         return "PENDING";
     }
@@ -88,6 +90,7 @@ public class ProductApiResource {
     @Path("batch-insert")
     @Produces(MediaType.APPLICATION_JSON)
     public String paginationQuery() {
+        log.info("Enter [testInsert] ");
         tradeRecordService.parseFile();
         return "success";
     }

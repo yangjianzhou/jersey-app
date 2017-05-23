@@ -64,7 +64,7 @@ public class TradeRecordService extends BaseService {
     public List<TradeRecordDTO>  buildTradeRecordList(){
         List<TradeRecordDTO> tradeRecordDTOs = new ArrayList<>();
 
-        for(int index = 0 ; index < 151; index ++){
+        for(int index = 0 ; index < 15100; index ++){
             TradeRecordDTO tradeRecordDTO = new TradeRecordDTO();
             tradeRecordDTO.setAmount(new BigDecimal(index));
             tradeRecordDTO.setProductId(index);

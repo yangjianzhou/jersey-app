@@ -1,0 +1,15 @@
+/build/
+/bin/
+/.classpath
+/.settings
+/.gradle
+/.project
+/.idea
+/src/main/resources/rebel.xml
+/TODO
+/*.iml
+/*.ipr
+/*.iws
+/out/
+/TODO
+
