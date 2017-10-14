@@ -2,23 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b482f16d-f6f9-4b1e-9b0f-3227a6e4a4cd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/bean/ReadFileThread.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/TradeRecordDAO$1.class" afterPath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/TradeRecordDAO$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/TradeRecordDAO.class" afterPath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/TradeRecordDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/service/ProductService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/service/ProductService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/data/tb_product.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/service/MultiSchemaXlsDataSetFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/service/MultiSchemaXlsDataSetReader.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/bean/BatchType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/bean/ProductPaginationBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/bean/ResultGson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/AbstractJerseyDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/BaseDAO$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/BaseDAO$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/BaseDAO$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/BaseDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/BatchAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/ProductDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/ProductOneDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/QuerySqlExecutor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/SqlMapConditionBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/TradeRecordDAO$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/TradeRecordDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/enums/EnumValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/enums/ProductType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/typeHandler/BaseTypeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/typeHandler/EnumValueTypeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dao/typeHandler/ProductTypeTypeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dto/BaseDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dto/ProductDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dto/TradeRecordDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/dto/UserDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/jersey/GsonJsonProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/resource/ProductApiResource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/service/BaseService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/service/ProductService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/service/TradeRecordService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/util/EnumUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/util/ListPartitionPolishingUtil$KeyValueList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/util/ListPartitionPolishingUtil$OptionRange.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/util/ListPartitionPolishingUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/yangjianzhou/util/ReadFileThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/DDL.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/dataSource.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/jerseyTest.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/sqlmap/jersey/tbl_product.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/sqlmap/jersey/tbl_product_one.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/sqlmap/jersey/tbl_trade_record.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/sqlmap/jersey/tbl_user.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/sqlmap/sqlMapConfig_jersey.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/jersey-app/com/yangjianzhou/bean/BatchType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/jersey-app/com/yangjianzhou/dao/TradeRecordDAO$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/jersey-app/com/yangjianzhou/dao/TradeRecordDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/jersey-app/com/yangjianzhou/resource/ProductApiResource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/jersey-app/com/yangjianzhou/service/TradeRecordService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/jersey-app/com/yangjianzhou/util/ReadFileThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/jersey-app/sqlmap/jersey/tbl_product_one.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/jersey-app/service/BaseServiceTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/jersey-app/service/ProductServiceTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/dataSource.xml" afterPath="$PROJECT_DIR$/build/resources/main/dataSource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/TradeRecordDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/TradeRecordDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jersey-app.iml" afterPath="$PROJECT_DIR$/jersey-app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jersey-app.ipr" afterPath="$PROJECT_DIR$/jersey-app.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/BaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/BaseDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/BaseDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/BaseDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/sqlmap/jersey/tbl_product.xml" afterPath="$PROJECT_DIR$/src/main/resources/sqlmap/jersey/tbl_product.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/service/BaseServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/service/BaseServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/unitils.properties" afterPath="$PROJECT_DIR$/src/test/resources/unitils.properties" />
     </list>
     <ignored path="jersey-app.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,97 +88,162 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jersey-app" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="jersey-app" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TradeRecordService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/TradeRecordService.java">
+      <file leaf-file-name="BaseServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/BaseServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+            <state relative-caret-position="180">
+              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductApiResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java">
+      <file leaf-file-name="SpringApplicationContext.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.unitils/unitils-spring/3.4.2/6369f0c9051c66d559797a03750783449efb2e04/unitils-spring-3.4.2-sources.jar!/org/unitils/spring/annotation/SpringApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+            <state relative-caret-position="356">
+              <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="21" />
+              <folding>
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/BaseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="56" />
+              <folding>
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tbl_product.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/jersey/tbl_product.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+              <folding>
+                <marker date="1507967805891" expanded="true" signature="1125:1274" ph="select from tb_product" />
+                <marker date="1507967805891" expanded="true" signature="1354:1401" ph="select count... tb_product" />
+                <marker date="1507967805891" expanded="true" signature="1499:1671" ph="insert into tb_product... " />
+                <marker date="1507967805891" expanded="true" signature="1749:1856" ph="select from tb_product" />
+                <marker date="1507967805891" expanded="true" signature="1944:2164" ph="update tb_pr... " />
+                <marker date="1507967805891" expanded="true" signature="2274:2314" ph="select * fro... tb_product" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractJerseyDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/AbstractJerseyDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/BaseDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#532#562#0" expanded="true" />
+                <element signature="e#711#741#0" expanded="true" />
+                <element signature="e#1411#1441#0" expanded="true" />
+                <element signature="e#1585#1615#0" expanded="true" />
+                <element signature="e#1963#1993#0" expanded="true" />
+                <element signature="e#2425#2664#0" expanded="true" />
+                <element signature="e#2663#2664#0" expanded="true" />
+                <element signature="e#2964#3203#0" expanded="true" />
+                <element signature="e#3202#3203#0" expanded="true" />
+                <element signature="e#3525#3992#0" expanded="true" />
+                <element signature="e#3991#3992#0" expanded="true" />
+                <element signature="e#4340#4341#0" expanded="true" />
+                <element signature="e#4361#4362#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductOneDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductOneDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BigFileTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/BigFileTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReadFileThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BatchType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/bean/BatchType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TradeRecordDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/TradeRecordDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="37" />
-              <folding>
-                <element signature="e#869#1323#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TradeRecordDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/TradeRecordDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/BaseDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -127,6 +254,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -134,9 +262,348 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="/usr/local/gradle/gradle-4.0.2" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.0.2" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="jersey-app" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="jersey-app" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'jersey-app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseWtpFacet" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans Eclipse wtp configuration files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseWtp" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse classpath file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'jersey-app'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'jersey-app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse WTP facet settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseWtpFacet" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'jersey-app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse JDT settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'jersey-app'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'jersey-app'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'jersey-app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse WTP component settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseWtpComponent" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'jersey-app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Eclipse wtp configuration files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseWtp" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseWtpComponent" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'jersey-app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="1507967307000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1648883174" />
         <entry key="$PROJECT_DIR$/../jerseyTest" value="1460172382311" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="jersey-app" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-script-kotlin-tooling-builders-0.9.0.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-wrapper-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-jvm-services-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-docs-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-tooling-api-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-model-groovy-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-messaging-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-native-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-process-services-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-script-kotlin-0.9.0.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-cli-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-installation-beacon-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/ant-1.9.6.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/ant-launcher-1.9.6.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/groovy-all-2.4.11.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-base-services-groovy-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-base-services-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-launcher-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-core-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-resources-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-script-kotlin-compiler-plugin-0.9.0.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-script-kotlin-tooling-models-0.9.0.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-logging-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-runtime-api-info-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/gradle-model-core-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-maven-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-testing-native-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-osgi-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-platform-native-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-dependency-management-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-workers-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-platform-jvm-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-announce-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-antlr-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-publish-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-composite-builds-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-code-quality-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-language-java-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-javascript-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-scala-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-ear-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-ivy-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-resources-s3-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-test-kit-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-language-scala-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-reporting-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-platform-play-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-ide-native-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-testing-jvm-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-testing-base-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-ide-play-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-language-jvm-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-build-init-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-plugin-use-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-platform-base-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-tooling-api-builders-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-build-cache-http-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-signing-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-language-groovy-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-resources-sftp-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-language-native-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-diagnostics-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-build-comparison-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-plugins-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-resources-http-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-plugin-development-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-ide-4.0.2.jar" />
+                  <option value="/usr/local/gradle/gradle-4.0.2/lib/plugins/gradle-jacoco-4.0.2.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="externalProjectsViewState">
@@ -146,13 +613,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductOneDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/QuerySqlExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/SqlMapConditionBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/BaseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/AbstractJerseyDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/typeHandler/ProductTypeTypeHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/typeHandler/EnumValueTypeHandler.java" />
@@ -162,7 +626,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/bean/ProductPaginationBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/bean/ReadFileThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/bean/ResultGson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/BaseDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/ProductDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/TradeRecordDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/UserDTO.java" />
@@ -170,8 +633,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/BaseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/EnumUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ListPartitionPolishingUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/service/BaseServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/service/TradeRecordServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/TradeRecordService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/bean/BatchType.java" />
@@ -179,25 +640,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/BigFileTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/TradeRecordDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/BaseDTO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/MultiSchemaXlsDataSetFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/unitils.properties" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/BaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sqlmap/jersey/tbl_product.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/BaseServiceTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="24" />
-    <option name="width" value="1869" />
-    <option name="height" value="1056" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="49" />
+    <option name="y" value="-4" />
+    <option name="width" value="1871" />
+    <option name="height" value="1084" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -213,248 +681,274 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqlmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yangjianzhou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yangjianzhou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yangjianzhou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jersey-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yangjianzhou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yangjianzhou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yangjianzhou" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yangjianzhou" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yangjianzhou" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlmap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlmap" type="462c0819:PsiDirectoryNode" />
+              <item name="jersey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jersey-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jersey-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaBasics" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$USER_HOME$/code/wpk-skyeye" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yangjianzhou.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/service" />
+      <recent name="$PROJECT_DIR$/src/test/resources/data" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ProductServiceTest.test_insert">
+    <configuration name="ProductServiceTest.test_insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="jersey-app_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ProductServiceTest" />
+      <option name="METHOD_NAME" value="test_insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -493,29 +987,6 @@
       <option name="PREFERRED_AVD" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -530,27 +1001,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
@@ -606,7 +1056,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="jersey-app" />
       <envs />
-      <method />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -618,42 +1067,6 @@
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
@@ -684,7 +1097,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="local" type="Remote" factoryName="Remote">
+    <configuration name="local" type="Remote" factoryName="Remote">
       <module name="jersey-app" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -695,11 +1108,17 @@
         <option name="DEBUG_PORT" value="6096" />
         <option name="LOCAL" value="false" />
       </RunnerSettings>
-      <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Remote.local" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ProductServiceTest.test_insert" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ProductServiceTest.test_insert" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ProductServiceTest.test_insert" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -711,37 +1130,125 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463905328011</updated>
+      <workItem from="1507962554022" duration="2157000" />
+      <workItem from="1507964740801" duration="5378000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 15h 38m 47s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 15h 43m 08s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 15h 43m 26s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 15h 45m 47s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 15h 47m 56s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 15h 49m 23s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 15h 51m 33s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 15h 59m 41s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 16h 28m 35s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductServiceTest_test_insert - 2017.10.14 at 16h 29m 53s.xml">
+      <configuration name="ProductServiceTest.test_insert" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7535000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="24" width="1869" height="1056" extended-state="6" />
+    <frame x="49" y="-4" width="1871" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3111588" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49034336" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48172042" sideWeight="0.50630134" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25233132" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46344087" sideWeight="0.49369863" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.48054793" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.4969863" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31182796" sideWeight="0.4980822" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4903226" sideWeight="0.4980822" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25369862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329863" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29613733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48172042" sideWeight="0.50630134" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26989248" sideWeight="0.49369863" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.48054793" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.4969863" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31182796" sideWeight="0.4980822" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4903226" sideWeight="0.4980822" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25424656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -750,40 +1257,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.38/b83cac8c938dfb9b7a8e191e2d482be88eb8280c/mysql-connector-java-5.1.38-sources.jar!/com/mysql/jdbc/StatementImpl.java</url>
-          <line>965</line>
+          <url>file://$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java</url>
+          <line>20</line>
           <properties />
-          <option name="timeStamp" value="60" />
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/execution/DefaultSqlExecutor.java</url>
-          <line>632</line>
+          <url>file://$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java</url>
+          <line>21</line>
           <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/TradeRecordDAO.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/TradeRecordDAO.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/execution/SqlExecutor.java</url>
-          <line>59</line>
-          <properties class="com.ibatis.sqlmap.engine.execution.SqlExecutor" method="executeBatch" />
-          <option name="timeStamp" value="61" />
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="65" />
+      <option name="time" value="70" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
@@ -796,268 +1285,60 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/jdk/jdk1.7.0_79/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4068">
-          <caret line="255" column="7" selection-start-line="255" selection-start-column="7" selection-end-line="255" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#12856#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/jersey/GsonJsonProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/jdk/jdk1.7.0_79/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4068">
-          <caret line="255" column="7" selection-start-line="255" selection-start-column="7" selection-end-line="255" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#12856#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/jersey/GsonJsonProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/QuerySqlExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/EnumUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ListPartitionPolishingUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/AbstractJerseyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/impl/ExtendedSqlMapClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/3.2.0.RELEASE/8554ac1fd1b8980dd9164f7a3a80a3ee01f3d2e2/spring-orm-3.2.0.RELEASE-sources.jar!/org/springframework/orm/ibatis/SqlMapClientCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/BaseServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/TradeRecordServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-dbcp2/2.1.1/c4f4a76171671ccf293be8995a498eab7fa8ed24/commons-dbcp2-2.1.1.jar!/org/apache/commons/dbcp2/DelegatingPreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-dbcp2/2.1.1/e312d6c766f8b2a95dee5d9335e5dbe40a304621/commons-dbcp2-2.1.1-sources.jar!/org/apache/commons/dbcp2/AbandonedTrace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-dbcp/commons-dbcp/1.4/9b076ff231434d5403be6599a1347019b12c0def/commons-dbcp-1.4-sources.jar!/org/apache/commons/dbcp/DelegatingPreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-dbcp/commons-dbcp/1.4/30be73c965cc990b153a100aaaaafcf239f82d39/commons-dbcp-1.4.jar!/org/apache/commons/dbcp/DelegatingPreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-dbcp/commons-dbcp/1.4/9b076ff231434d5403be6599a1347019b12c0def/commons-dbcp-1.4-sources.jar!/org/apache/commons/dbcp/DelegatingStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="295" column="17" selection-start-line="295" selection-start-column="17" selection-end-line="295" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/scope/SessionScope.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="235" column="17" selection-start-line="235" selection-start-column="17" selection-end-line="235" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.38/dbbd7cd309ce167ec8367de4e41c63c2c8593cc5/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/JDBC4PreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/cf84bb3862f9c8017cbd6ad39979210f154ef10e/mybatis-2.3.5.jar!/com/ibatis/sqlmap/engine/impl/SqlMapClientImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/client/SqlMapTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="88" column="14" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+          <caret line="88" column="14" lean-forward="false" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/mapping/statement/MappedStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/impl/SqlMapClientImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-dbcp2/2.1.1/e312d6c766f8b2a95dee5d9335e5dbe40a304621/commons-dbcp2-2.1.1-sources.jar!/org/apache/commons/dbcp2/DelegatingStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
-          <caret line="339" column="0" selection-start-line="339" selection-start-column="0" selection-end-line="339" selection-end-column="0" />
+          <caret line="339" column="0" lean-forward="false" selection-start-line="339" selection-start-column="0" selection-end-line="339" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/cf84bb3862f9c8017cbd6ad39979210f154ef10e/mybatis-2.3.5.jar!/com/ibatis/sqlmap/client/SqlMapExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/jdk/jdk1.7.0_79/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/local/jdk/jdk1.7.0_79/src.zip!/java/sql/PreparedStatement.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.38/b83cac8c938dfb9b7a8e191e2d482be88eb8280c/mysql-connector-java-5.1.38-sources.jar!/com/mysql/jdbc/Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="668" column="24" selection-start-line="668" selection-start-column="24" selection-end-line="668" selection-end-column="24" />
+          <caret line="668" column="24" lean-forward="false" selection-start-line="668" selection-start-column="24" selection-end-line="668" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.38/b83cac8c938dfb9b7a8e191e2d482be88eb8280c/mysql-connector-java-5.1.38-sources.jar!/com/mysql/jdbc/CallableStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
-          <caret line="2417" column="32" selection-start-line="2417" selection-start-column="32" selection-end-line="2417" selection-end-column="32" />
+          <caret line="2417" column="32" lean-forward="false" selection-start-line="2417" selection-start-column="32" selection-end-line="2417" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.38/b83cac8c938dfb9b7a8e191e2d482be88eb8280c/mysql-connector-java-5.1.38-sources.jar!/com/mysql/jdbc/StatementImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1484">
-          <caret line="1491" column="51" selection-start-line="1491" selection-start-column="35" selection-end-line="1491" selection-end-column="51" />
+          <caret line="1491" column="51" lean-forward="false" selection-start-line="1491" selection-start-column="35" selection-end-line="1491" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1065,35 +1346,29 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/client/SqlMapExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="328" column="7" selection-start-line="328" selection-start-column="7" selection-end-line="328" selection-end-column="7" />
+          <caret line="328" column="7" lean-forward="false" selection-start-line="328" selection-start-column="7" selection-end-line="328" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/cf84bb3862f9c8017cbd6ad39979210f154ef10e/mybatis-2.3.5.jar!/com/ibatis/sqlmap/engine/impl/SqlMapSessionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2500">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/impl/SqlMapSessionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="183" column="28" selection-start-line="183" selection-start-column="28" selection-end-line="183" selection-end-column="28" />
+          <caret line="183" column="28" lean-forward="false" selection-start-line="183" selection-start-column="28" selection-end-line="183" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/jdk/jdk1.7.0_79/src.zip!/java/sql/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="581" column="10" selection-start-line="581" selection-start-column="10" selection-end-line="581" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/local/jdk/jdk1.7.0_79/src.zip!/java/sql/Statement.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/execution/SqlExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1101,7 +1376,7 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/execution/DefaultSqlExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+          <caret line="120" column="16" lean-forward="false" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1109,78 +1384,433 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/2.3.5/169c137fe79508cce40844e77fb1933820f4ad12/mybatis-2.3.5-sources.jar!/com/ibatis/sqlmap/engine/impl/SqlMapExecutorDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="769" column="29" selection-start-line="769" selection-start-column="29" selection-end-line="769" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/BaseDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/TradeRecordDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
+          <caret line="769" column="29" lean-forward="false" selection-start-line="769" selection-start-column="29" selection-end-line="769" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/bean/BatchType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/BigFileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1512">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/TradeRecordService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="738">
+          <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/resource/ProductApiResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="900">
+          <caret line="69" column="43" lean-forward="false" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/util/ReadFileThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/TradeRecordDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="216">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
-            <element signature="e#869#1323#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
+            <marker date="1507962129981" expanded="true" signature="2271:2569" ph="insert into tb_trade_record... " />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/TradeRecordServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/TradeRecordDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <element signature="e#644#645#0" expanded="false" />
+            <element signature="e#673#674#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/3.2.0.RELEASE/f8de9ebe7c693efd1f3f5e52c50a84fe33eba6d4/spring-test-3.2.0.RELEASE-sources.jar!/org/springframework/test/context/support/DependencyInjectionTestExecutionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="36" column="71" lean-forward="false" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/3.2.0.RELEASE/f8de9ebe7c693efd1f3f5e52c50a84fe33eba6d4/spring-test-3.2.0.RELEASE-sources.jar!/org/springframework/test/context/junit4/AbstractJUnit4SpringContextTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="63" column="42" lean-forward="true" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DDL.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="167" lean-forward="false" selection-start-line="2" selection-start-column="167" selection-end-line="2" selection-end-column="167" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/applicationContext-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataSource-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/ProductDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dto/BaseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#390#391#0" expanded="false" />
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#522#523#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#583#584#0" expanded="false" />
+            <element signature="e#619#620#0" expanded="false" />
+            <element signature="e#651#652#0" expanded="false" />
+            <element signature="e#701#702#0" expanded="false" />
+            <element signature="e#743#744#0" expanded="false" />
+            <element signature="e#777#778#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#857#858#0" expanded="false" />
+            <element signature="e#899#900#0" expanded="false" />
+            <element signature="e#935#936#0" expanded="false" />
+            <element signature="e#967#968#0" expanded="false" />
+            <element signature="e#1017#1018#0" expanded="false" />
+            <element signature="e#1059#1060#0" expanded="false" />
+            <element signature="e#1093#1094#0" expanded="false" />
+            <element signature="e#1125#1126#0" expanded="false" />
+            <element signature="e#1173#1174#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.unitils/unitils-database/3.4.2/3ff956cbc1216ee2bf4aa3ca1b5b9b76aee17fd0/unitils-database-3.4.2-sources.jar!/org/unitils/database/config/PropertiesDataSourceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="68" column="29" lean-forward="false" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#3101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/MyDbunitModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.dbunit/dbunit/2.4.9/202e5e26cf1363b10b73d8370949894dbb70a87c/dbunit-2.4.9-sources.jar!/org/dbunit/ext/mysql/MySqlMetadataHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="40" column="63" lean-forward="false" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/unitils.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="62" column="81" lean-forward="false" selection-start-line="62" selection-start-column="81" selection-end-line="62" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.unitils/unitils-core/3.4.2/fc5e197dd6bd878192160de14c2d7f686d221e41/unitils-core-3.4.2-sources.jar!/org/unitils/UnitilsJUnit4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/MultiSchemaXlsDataSetFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/MultiSchemaXlsDataSetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductOneDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/AbstractJerseyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/BaseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#532#562#0" expanded="true" />
+            <element signature="e#711#741#0" expanded="true" />
+            <element signature="e#1411#1441#0" expanded="true" />
+            <element signature="e#1585#1615#0" expanded="true" />
+            <element signature="e#1963#1993#0" expanded="true" />
+            <element signature="e#2425#2664#0" expanded="true" />
+            <element signature="e#2663#2664#0" expanded="true" />
+            <element signature="e#2964#3203#0" expanded="true" />
+            <element signature="e#3202#3203#0" expanded="true" />
+            <element signature="e#3525#3992#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4340#4341#0" expanded="true" />
+            <element signature="e#4361#4362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/jersey/tbl_product.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+          <folding>
+            <marker date="1507967805891" expanded="true" signature="1125:1274" ph="select from tb_product" />
+            <marker date="1507967805891" expanded="true" signature="1354:1401" ph="select count... tb_product" />
+            <marker date="1507967805891" expanded="true" signature="1499:1671" ph="insert into tb_product... " />
+            <marker date="1507967805891" expanded="true" signature="1749:1856" ph="select from tb_product" />
+            <marker date="1507967805891" expanded="true" signature="1944:2164" ph="update tb_pr... " />
+            <marker date="1507967805891" expanded="true" signature="2274:2314" ph="select * fro... tb_product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/dao/ProductDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="56" />
+          <folding>
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yangjianzhou/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/ProductServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.unitils/unitils-spring/3.4.2/6369f0c9051c66d559797a03750783449efb2e04/unitils-spring-3.4.2-sources.jar!/org/unitils/spring/annotation/SpringApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/BaseServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ExtJS GPL-4.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jersey-app_test|jersey-app</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: antlr:antlr:2.7.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

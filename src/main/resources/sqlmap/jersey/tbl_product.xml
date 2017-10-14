@@ -58,4 +58,7 @@
         version = #version#
     </update>
 
+    <select id="queryById" resultMap="BaseResultMap" parameterClass="java.lang.Long">
+        select * from tb_product where id = #id#
+    </select>
 </sqlMap>

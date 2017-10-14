@@ -2,7 +2,7 @@ apply plugin: "java"
 apply plugin: "idea"
 apply plugin: "eclipse"
 apply plugin: "eclipse-wtp"
-apply plugin: 'jetty'
+//apply plugin: 'jetty'
 
 idea {
     module {
@@ -29,7 +29,8 @@ dependencies {
     compile 'mysql:mysql-connector-java:5.1.38'
     compile 'org.unitils:unitils-database:3.4.2'
     compile 'org.unitils:unitils-dbunit:3.4.2'
-
+    testCompile 'org.unitils:unitils-spring:3.4.2'
+    compile 'org.apache.poi:poi:3.2-FINAL'
     compile 'com.google.code.gson:gson:2.6.2'
 
     compile 'org.apache.commons:commons-dbcp2:2.1.1'
@@ -51,10 +52,10 @@ dependencies {
     compile 'asm:asm:3.3.1'
 
 }
-
+/**
 jettyRun {
     httpPort 6094
     contextPath project.name
     scanIntervalSeconds 0
     reload "automatic"
-}  
+} */ 

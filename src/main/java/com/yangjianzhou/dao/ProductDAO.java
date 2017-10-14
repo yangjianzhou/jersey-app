@@ -11,11 +11,14 @@ import java.util.Map;
  * Created by yangjianzhou on 16-4-13.
  */
 
-@Repository
-public class ProductDAO extends AbstractJerseyDAO {
+@Repository public class ProductDAO extends AbstractJerseyDAO {
 
     public void insert(ProductDTO productDTO) {
         this.insert("tb_product.insert", productDTO);
+    }
+
+    public ProductDTO queryById(Long id) {
+        return this.queryForObject("tb_product.queryById", id);
     }
 
     public List<ProductDTO> selectAll() {

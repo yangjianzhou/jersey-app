@@ -3,9 +3,12 @@ package com.yangjianzhou.dto;
 import java.util.Date;
 
 /**
- * Created by yangjianzhou on 16-4-13.
+ * @Author: qingyang.
+ * @Description:
+ * @Date:Created in 2017-10-14 15:34.
  */
 public class BaseDTO {
+
 
     private int id;
 

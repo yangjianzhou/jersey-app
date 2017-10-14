@@ -28,6 +28,10 @@ public class ProductService extends BaseService {
         productDAO.insert(productDTO);
     }
 
+    public ProductDTO queryProductById(Long productId){
+        return productDAO.queryById(productId);
+    }
+
     public ResultGson<List<ProductDTO>> getAllProduct() {
         List<ProductDTO> productDTOs = productDAO.selectAll();
         return new ResultGson<>("000", "success", productDTOs);

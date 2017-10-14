@@ -1,22 +1,24 @@
 package service;
 
+import com.yangjianzhou.dto.ProductDTO;
 import com.yangjianzhou.service.ProductService;
 import org.junit.Assert;
-import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.unitils.dbunit.annotation.DataSet;
+import org.unitils.spring.annotation.SpringBeanByType;
 
 /**
  * Created by yangjianzhou on 16-4-17.
  */
 public class ProductServiceTest extends BaseServiceTest {
 
-    @Autowired
+    @SpringBeanByType
     private ProductService productService;
 
-    @Test
+    @org.junit.Test
+    @DataSet({"/data/tb_product.xls"})
     public void test_insert() {
 
-        productService.saveProduct();
-        Assert.assertTrue(true);
+        ProductDTO productDTO = productService.queryProductById(4L);
+        Assert.assertTrue("zhangsan".equals(productDTO.getName()));
     }
 }

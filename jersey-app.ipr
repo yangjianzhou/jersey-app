@@ -7,10 +7,13 @@
       <entry name=".+\.(gif|png|jpeg|jpg)"/>
     </resourceExtensions>
     <wildcardResourcePatterns>
+      <entry name="!?*.class"/>
+      <entry name="!?*.scala"/>
       <entry name="!?*.java"/>
       <entry name="!?*.groovy"/>
     </wildcardResourcePatterns>
     <annotationProcessing enabled="false" useClasspath="true"/>
+    <bytecodeTargetLevel target="1.8"/>
   </component>
   <component name="CopyrightManager" default="">
     <module2copyright/>
@@ -45,10 +48,10 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jersey-app.iml" filepath="$PROJECT_DIR$/jersey-app.iml"/>
+      <module filepath="$PROJECT_DIR$/jersey-app.iml" fileurl="file://$PROJECT_DIR$/jersey-app.iml"/>
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-type="JavaSDK" assert-jdk-15="true" project-jdk-name="1.7">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-type="JavaSDK" assert-jdk-15="true" project-jdk-name="1.8">
     <output url="file://$PROJECT_DIR$/out"/>
   </component>
   <component name="SvnBranchConfigurationManager">
