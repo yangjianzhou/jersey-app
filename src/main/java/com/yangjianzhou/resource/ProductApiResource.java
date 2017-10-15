@@ -86,7 +86,7 @@ public class ProductApiResource {
         return paginationBeanResultGson;
     }
 
-    @GET
+    @POST
     @Path("batch-insert")
     @Produces(MediaType.APPLICATION_JSON)
     public String paginationQuery() {
@@ -95,4 +95,10 @@ public class ProductApiResource {
         return "success";
     }
 
+    @GET
+    @Path("dp")
+    public String test(){
+        tradeRecordService.test();
+        return "";
+    }
 }

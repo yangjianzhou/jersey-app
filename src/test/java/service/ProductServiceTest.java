@@ -1,4 +1,4 @@
-package test.java.service;
+package service;
 
 import com.yangjianzhou.service.ProductService;
 import org.junit.Assert;

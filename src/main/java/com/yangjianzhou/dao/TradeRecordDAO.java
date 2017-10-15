@@ -24,7 +24,9 @@ public class TradeRecordDAO extends AbstractJerseyDAO {
             public Object doInSqlMapClient(SqlMapExecutor executor) throws SQLException {
                 executor.startBatch();
                 for (TradeRecordDTO tradeRecordDTO : tradeRecordDTOList) {
-                    sqlMapClient.insert("tb_trade_record.insert", tradeRecordDTO);
+                    //sqlMapClient.insert("tb_trade_record.insert", tradeRecordDTO);
+                    executor.insert("tb_trade_record.insert", tradeRecordDTO);
+
                 }
                 executor.executeBatch();
                 return null;

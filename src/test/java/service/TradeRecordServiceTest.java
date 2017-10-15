@@ -1,4 +1,4 @@
-package test.java.service;
+package service;
 
 import com.google.common.collect.Lists;
 import com.yangjianzhou.util.ReadFileThread;

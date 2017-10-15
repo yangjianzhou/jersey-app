@@ -1,4 +1,4 @@
-package test.java.service;
+package service;
 
 import com.google.common.base.Splitter;
 
@@ -17,5 +17,32 @@ public class Test {
         System.out.println(list.get(2));
         String[] ls = str.split("-");
         System.out.println(list.get(2));
+        fibonacci(100);
+    }
+
+    public static long fibonacci(long n) {
+        long tmpN_1 = 1;
+        long tmpN_2 = 0;
+
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        }
+        long counter = 1;
+        long result = 0;
+        while (counter < n) {
+            result = tmpN_1 + tmpN_2;
+            tmpN_2 = tmpN_1;
+            tmpN_1 = result;
+            counter++;
+            System.out.print(result + " ");
+        }
+        return result;
+    }
+
+    public synchronized static void method1(){
+
     }
 }

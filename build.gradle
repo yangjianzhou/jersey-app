@@ -40,7 +40,6 @@ dependencies {
     compile 'com.sun.jersey.contribs:jersey-spring:1.19.1'
     compile 'aspectj:aspectjrt:1.5.4'
     compile 'org.aspectj:aspectjweaver:1.8.9'
-
     compile 'com.google.guava:guava:19.0'
 
     compile 'com.sun.jersey:jersey-core:1.19'

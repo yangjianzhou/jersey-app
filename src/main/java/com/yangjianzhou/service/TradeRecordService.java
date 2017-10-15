@@ -5,6 +5,7 @@ import com.yangjianzhou.dao.TradeRecordDAO;
 import com.yangjianzhou.dao.enums.ProductType;
 import com.yangjianzhou.dto.ProductDTO;
 import com.yangjianzhou.dto.TradeRecordDTO;
+import com.yangjianzhou.service.test.AService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,6 +25,9 @@ public class TradeRecordService extends BaseService {
     private TradeRecordDAO tradeRecordDAO ;
     @Autowired
     private ProductDAO productDAO ;
+
+    @Autowired
+    private AService a ;
     
     public void  parseFile(){
         ProductDTO productDTO = buildProductDTO();
@@ -37,8 +41,19 @@ public class TradeRecordService extends BaseService {
     }
 
     @Transactional
-    public void batchInsert(List<TradeRecordDTO> tradeRecordDTOList , ProductDTO productDTO){
-        tradeRecordDAO.batchInsert(tradeRecordDTOList);
+    public void batchInsert(List<TradeRecordDTO> tradeRecordDTOList, ProductDTO productDTO) {
+
+        int count = 0;
+        int batchSize = 200;
+        List<TradeRecordDTO> tmpList = new ArrayList<>();
+        for (TradeRecordDTO tradeRecordDTO : tradeRecordDTOList) {
+            tmpList.add(tradeRecordDTO);
+            count++;
+            if (count % batchSize == 0) {
+                tradeRecordDAO.batchInsert(tmpList);
+                tmpList.clear();
+            }
+        }
         productDAO.updateNameById(productDTO);
     }
 
@@ -64,7 +79,7 @@ public class TradeRecordService extends BaseService {
     public List<TradeRecordDTO>  buildTradeRecordList(){
         List<TradeRecordDTO> tradeRecordDTOs = new ArrayList<>();
 
-        for(int index = 0 ; index < 15100; index ++){
+        for(int index = 0 ; index < 1500100; index ++){
             TradeRecordDTO tradeRecordDTO = new TradeRecordDTO();
             tradeRecordDTO.setAmount(new BigDecimal(index));
             tradeRecordDTO.setProductId(index);
@@ -102,6 +117,10 @@ public class TradeRecordService extends BaseService {
         }
 
         return tradeRecordDTOs ;
+    }
+
+    public void test(){
+        a.test();
     }
 
 }
