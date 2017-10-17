@@ -19,12 +19,12 @@ repositories {
 
 dependencies {
 
-    compile 'org.springframework:spring-context:3.2.0.RELEASE'
-    compile 'org.springframework:spring-web:3.2.0.RELEASE'
-    compile 'org.springframework:spring-webmvc:3.2.0.RELEASE'
-    compile 'org.springframework:spring-tx:3.2.0.RELEASE'
+    compile 'org.springframework:spring-context:5.0.0.RELEASE'
+    compile 'org.springframework:spring-web:5.0.0.RELEASE'
+    compile 'org.springframework:spring-webmvc:5.0.0.RELEASE'
+    compile 'org.springframework:spring-tx:5.0.0.RELEASE'
     compile 'org.springframework:spring-orm:3.2.0.RELEASE'
-    compile 'org.springframework:spring-test:3.2.0.RELEASE'
+    compile 'org.springframework:spring-test:5.0.0.RELEASE'
 
     compile 'mysql:mysql-connector-java:5.1.38'
     compile 'org.unitils:unitils-database:3.4.2'
