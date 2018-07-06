@@ -1,8 +1,6 @@
 package com.yangjianzhou.util;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.stereotype.Component;
 import org.unitils.spring.util.ApplicationContextFactory;
 
 import java.util.List;
@@ -14,14 +12,15 @@ import java.util.List;
  *
  * AnnotationConfigWebApplicationContext
  */
-@Component
 public class SpringBootApplicationContextFactory implements ApplicationContextFactory {
 
-    @Autowired
-    private ConfigurableApplicationContext configurableApplicationContext ;
+    private static ConfigurableApplicationContext configurableApplicationContext ;
 
-    @Override
     public ConfigurableApplicationContext createApplicationContext(List<String> locations) {
         return configurableApplicationContext;
+    }
+
+    public static void setConfigurableApplicationContext(ConfigurableApplicationContext configurableApplicationContext) {
+        SpringBootApplicationContextFactory.configurableApplicationContext = configurableApplicationContext;
     }
 }

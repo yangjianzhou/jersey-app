@@ -5,6 +5,7 @@ import org.apache.commons.logging.LogFactory;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.internal.runners.MethodRoadie;
+import org.junit.internal.runners.TestClass;
 import org.junit.internal.runners.TestMethod;
 import org.junit.internal.runners.model.ReflectiveCallable;
 import org.junit.internal.runners.statements.ExpectException;
@@ -29,33 +30,81 @@ import org.springframework.test.context.junit4.statements.*;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ReflectionUtils;
-import org.unitils.UnitilsJUnit4TestClassRunner;
 import org.unitils.core.TestListener;
 import org.unitils.core.Unitils;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
+
+    private final TestContextManager testContextManager;
 
     private static final Log logger = LogFactory.getLog(SpringJUnit4ClassRunner.class);
 
     private static final Method withRulesMethod;
 
+    private final List<Method> testMethods;
+
+    private TestClass testClass;
+
+  /*  public void executeTestMethod(Object testObject, Method method) {
+        TestMethod testMethod = wrapMethod(method,testObject);
+        RunNotifier notifier = new RunNotifier();
+        InterceptingListener listener = new InterceptingListener();
+        notifier.addListener(listener);
+        Description description = methodDescription(method);
+        createMethodRoadie(testObject, method, testMethod, notifier, description).run();
+        if(listener.isFailed()) {
+            StringBuilder msg = new StringBuilder("Exception while executing ");
+            msg.append(method.getName()).append(": ").append(listener.getFailure().getDescription());
+            throw new UnitilsException(msg.toString(),listener.getFailure().getException());
+        }
+    }*/
+
+    protected void invokeTestMethod(Method method, RunNotifier notifier) {
+        Description description = methodDescription(method);
+        Object testObject;
+        try {
+            testObject = createTest();
+        } catch (InvocationTargetException e) {
+            //testAborted(notifier, description, e.getCause());
+            return;
+        } catch (Exception e) {
+           // testAborted(notifier, description, e);
+            return;
+        }
+        TestMethod testMethod = wrapMethod(method);
+        if (!testMethod.isIgnored()) {
+            getTestListener().afterCreateTestObject(testObject);
+        }
+        if(getTestListener().shouldInvokeTestMethod(testObject, method)) {
+            createMethodRoadie(testObject, method, testMethod, notifier, description).run();
+        }
+    }
+
+    protected TestMethod wrapMethod(Method method ) {
+        return new TestMethod(method ,testClass);
+    }
+
+    protected Description methodDescription(Method method) {
+        return Description.createTestDescription(getTestClass().getJavaClass(), method.getName(), method.getAnnotations());
+    }
+
+
     static {
         Assert.state(ClassUtils.isPresent("org.junit.internal.Throwables", SpringJUnit4ClassRunner.class.getClassLoader()),
                 "SpringJUnit4ClassRunner requires JUnit 4.12 or higher.");
 
-        Method method = ReflectionUtils.findMethod(SpringJUnit4ClassRunner.class, "withRules",
+        Method method = ReflectionUtils.findMethod(CustomizedUnitilsJUnit4Runner.class, "withRules",
                 FrameworkMethod.class, Object.class, Statement.class);
         Assert.state(method != null, "SpringJUnit4ClassRunner requires JUnit 4.12 or higher");
         ReflectionUtils.makeAccessible(method);
         withRulesMethod = method;
     }
-
-
-    private final TestContextManager testContextManager;
 
 
     private static void ensureSpringRulesAreNotPresent(Class<?> testClass) {
@@ -82,6 +131,8 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
         if (logger.isDebugEnabled()) {
             logger.debug("SpringJUnit4ClassRunner constructor called with [" + clazz + "]");
         }
+        testClass = new TestClass(clazz);
+        testMethods = testClass.getTestMethods();
         ensureSpringRulesAreNotPresent(clazz);
         this.testContextManager = createTestContextManager(clazz);
     }
@@ -134,6 +185,8 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
             notifier.fireTestIgnored(getDescription());
             return;
         }
+       // executeTestMethod(getTestClass() ,withRulesMethod);
+
         super.run(notifier);
     }
 
@@ -186,7 +239,8 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
      */
     @Override
     protected void runChild(FrameworkMethod frameworkMethod, RunNotifier notifier) {
-        Description description = describeChild(frameworkMethod);
+        invokeTestMethod( frameworkMethod.getMethod() ,notifier);
+        /*Description description = describeChild(frameworkMethod);
         if (isTestMethodIgnored(frameworkMethod)) {
             notifier.fireTestIgnored(description);
         } else {
@@ -197,7 +251,7 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
                 statement = new Fail(ex);
             }
             runLeaf(statement, description, notifier);
-        }
+        }*/
     }
 
     /**
