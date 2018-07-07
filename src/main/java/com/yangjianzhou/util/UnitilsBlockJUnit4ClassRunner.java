@@ -2,18 +2,12 @@ package com.yangjianzhou.util;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.junit.internal.runners.MethodRoadie;
-import org.junit.internal.runners.TestClass;
-import org.junit.internal.runners.TestMethod;
 import org.junit.internal.runners.model.ReflectiveCallable;
 import org.junit.internal.runners.statements.ExpectException;
 import org.junit.internal.runners.statements.Fail;
 import org.junit.internal.runners.statements.FailOnTimeout;
 import org.junit.runner.Description;
-import org.junit.runner.notification.Failure;
-import org.junit.runner.notification.RunListener;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.model.FrameworkMethod;
@@ -32,80 +26,60 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.ReflectionUtils;
 import org.unitils.core.TestListener;
 import org.unitils.core.Unitils;
+import org.unitils.core.junit.*;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
+public class UnitilsBlockJUnit4ClassRunner extends BlockJUnit4ClassRunner {
 
     private final TestContextManager testContextManager;
 
-    private static final Log logger = LogFactory.getLog(SpringJUnit4ClassRunner.class);
+    protected Object test;
+
+    protected TestListener unitilsTestListener;
 
     private static final Method withRulesMethod;
 
-    private final List<Method> testMethods;
-
-    private TestClass testClass;
-
-  /*  public void executeTestMethod(Object testObject, Method method) {
-        TestMethod testMethod = wrapMethod(method,testObject);
-        RunNotifier notifier = new RunNotifier();
-        InterceptingListener listener = new InterceptingListener();
-        notifier.addListener(listener);
-        Description description = methodDescription(method);
-        createMethodRoadie(testObject, method, testMethod, notifier, description).run();
-        if(listener.isFailed()) {
-            StringBuilder msg = new StringBuilder("Exception while executing ");
-            msg.append(method.getName()).append(": ").append(listener.getFailure().getDescription());
-            throw new UnitilsException(msg.toString(),listener.getFailure().getException());
-        }
-    }*/
-
-    protected void invokeTestMethod(Method method, RunNotifier notifier) {
-        Description description = methodDescription(method);
-        Object testObject;
-        try {
-            testObject = createTest();
-        } catch (InvocationTargetException e) {
-            //testAborted(notifier, description, e.getCause());
-            return;
-        } catch (Exception e) {
-           // testAborted(notifier, description, e);
-            return;
-        }
-        TestMethod testMethod = wrapMethod(method);
-        if (!testMethod.isIgnored()) {
-            getTestListener().afterCreateTestObject(testObject);
-        }
-        if(getTestListener().shouldInvokeTestMethod(testObject, method)) {
-            createMethodRoadie(testObject, method, testMethod, notifier, description).run();
-        }
-    }
-
-    protected TestMethod wrapMethod(Method method ) {
-        return new TestMethod(method ,testClass);
-    }
-
-    protected Description methodDescription(Method method) {
-        return Description.createTestDescription(getTestClass().getJavaClass(), method.getName(), method.getAnnotations());
-    }
-
+    private static final Log logger = LogFactory.getLog(SpringJUnit4ClassRunner.class);
 
     static {
         Assert.state(ClassUtils.isPresent("org.junit.internal.Throwables", SpringJUnit4ClassRunner.class.getClassLoader()),
                 "SpringJUnit4ClassRunner requires JUnit 4.12 or higher.");
 
-        Method method = ReflectionUtils.findMethod(CustomizedUnitilsJUnit4Runner.class, "withRules",
-                FrameworkMethod.class, Object.class, Statement.class);
+        Method method = ReflectionUtils.findMethod(UnitilsBlockJUnit4ClassRunner.class, "withRules",FrameworkMethod.class, Object.class, Statement.class);
         Assert.state(method != null, "SpringJUnit4ClassRunner requires JUnit 4.12 or higher");
         ReflectionUtils.makeAccessible(method);
         withRulesMethod = method;
     }
 
+    /**
+     * Construct a new {@code SpringJUnit4ClassRunner} and initialize a
+     * {@link TestContextManager} to provide Spring testing functionality to
+     * standard JUnit tests.
+     *
+     * @param clazz the test class to be run
+     * @see #createTestContextManager(Class)
+     */
+    public UnitilsBlockJUnit4ClassRunner(Class<?> clazz) throws InitializationError {
+        super(clazz);
+        if (logger.isDebugEnabled()) {
+            logger.debug("SpringJUnit4ClassRunner constructor called with [" + clazz + "]");
+        }
+        ensureSpringRulesAreNotPresent(clazz);
+        this.testContextManager = createTestContextManager(clazz);
+        this.unitilsTestListener = getUnitilsTestListener();
+    }
+
+    @Override
+    protected Statement classBlock(RunNotifier notifier) {
+        Class<?> testClass = getTestClass().getJavaClass();
+
+        Statement statement = super.classBlock(notifier);
+        statement = new BeforeTestClassStatement(testClass, unitilsTestListener, statement);
+        return statement;
+    }
 
     private static void ensureSpringRulesAreNotPresent(Class<?> testClass) {
         for (Field field : testClass.getFields()) {
@@ -118,23 +92,9 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
         }
     }
 
-    /**
-     * Construct a new {@code SpringJUnit4ClassRunner} and initialize a
-     * {@link TestContextManager} to provide Spring testing functionality to
-     * standard JUnit tests.
-     *
-     * @param clazz the test class to be run
-     * @see #createTestContextManager(Class)
-     */
-    public CustomizedUnitilsJUnit4Runner(Class<?> clazz) throws InitializationError {
-        super(clazz);
-        if (logger.isDebugEnabled()) {
-            logger.debug("SpringJUnit4ClassRunner constructor called with [" + clazz + "]");
-        }
-        testClass = new TestClass(clazz);
-        testMethods = testClass.getTestMethods();
-        ensureSpringRulesAreNotPresent(clazz);
-        this.testContextManager = createTestContextManager(clazz);
+
+    protected TestListener getUnitilsTestListener() {
+        return Unitils.getInstance().getTestListener();
     }
 
     /**
@@ -185,8 +145,6 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
             notifier.fireTestIgnored(getDescription());
             return;
         }
-       // executeTestMethod(getTestClass() ,withRulesMethod);
-
         super.run(notifier);
     }
 
@@ -229,29 +187,6 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
         Object testInstance = super.createTest();
         getTestContextManager().prepareTestInstance(testInstance);
         return testInstance;
-    }
-
-    /**
-     * Perform the same logic as
-     * {@link BlockJUnit4ClassRunner#runChild(FrameworkMethod, RunNotifier)},
-     * except that tests are determined to be <em>ignored</em> by
-     * {@link #isTestMethodIgnored(FrameworkMethod)}.
-     */
-    @Override
-    protected void runChild(FrameworkMethod frameworkMethod, RunNotifier notifier) {
-        invokeTestMethod( frameworkMethod.getMethod() ,notifier);
-        /*Description description = describeChild(frameworkMethod);
-        if (isTestMethodIgnored(frameworkMethod)) {
-            notifier.fireTestIgnored(description);
-        } else {
-            Statement statement;
-            try {
-                statement = methodBlock(frameworkMethod);
-            } catch (Throwable ex) {
-                statement = new Fail(ex);
-            }
-            runLeaf(statement, description, notifier);
-        }*/
     }
 
     /**
@@ -305,6 +240,21 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
         statement = withRulesReflectively(frameworkMethod, testInstance, statement);
         statement = withPotentialRepeat(frameworkMethod, testInstance, statement);
         statement = withPotentialTimeout(frameworkMethod, testInstance, statement);
+
+        Method testMethod = frameworkMethod.getMethod();
+
+       // Statement statement = super.methodBlock(method);
+        statement = new BeforeTestSetUpStatement(test, testMethod, unitilsTestListener, statement);
+        statement = new AfterTestTearDownStatement(unitilsTestListener, statement, test, testMethod);
+        return statement;
+    }
+
+    @Override
+    protected Statement methodInvoker(FrameworkMethod method, Object test) {
+        this.test = test;
+        Statement statement = super.methodInvoker(method, test);
+        statement = new BeforeTestMethodStatement(unitilsTestListener, statement, method.getMethod(), test);
+        statement = new AfterTestMethodStatement(unitilsTestListener, statement, method.getMethod(), test);
         return statement;
     }
 
@@ -315,19 +265,6 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
         Object result = ReflectionUtils.invokeMethod(withRulesMethod, this, frameworkMethod, testInstance, statement);
         Assert.state(result instanceof Statement, "withRules mismatch");
         return (Statement) result;
-    }
-
-    /**
-     * Return {@code true} if {@link Ignore @Ignore} is present for the supplied
-     * {@linkplain FrameworkMethod test method} or if the test method is disabled
-     * via {@code @IfProfileValue}.
-     *
-     * @see ProfileValueUtils#isTestEnabledInThisEnvironment(Method, Class)
-     */
-    protected boolean isTestMethodIgnored(FrameworkMethod frameworkMethod) {
-        Method method = frameworkMethod.getMethod();
-        return (method.isAnnotationPresent(Ignore.class) ||
-                !ProfileValueUtils.isTestEnabledInThisEnvironment(method, getTestClass().getJavaClass()));
     }
 
     /**
@@ -476,127 +413,5 @@ public class CustomizedUnitilsJUnit4Runner extends BlockJUnit4ClassRunner {
     protected Statement withPotentialRepeat(FrameworkMethod frameworkMethod, Object testInstance, Statement next) {
         return new SpringRepeat(next, frameworkMethod.getMethod());
     }
-
-
-    protected class TestListenerInvokingMethodRoadie extends MethodRoadie {
-
-
-        /* Instance under test */
-        protected Object testObject;
-
-        /* Method under test */
-        protected Method testMethod;
-
-        protected Throwable throwable;
-
-
-        /**
-         * Creates a method roadie.
-         *
-         * @param testObject      The test instance, not null
-         * @param testMethod      The test method, not null
-         * @param jUnitTestMethod The JUnit test method
-         * @param notifier        The run listener, not null
-         * @param description     A test description
-         */
-        public TestListenerInvokingMethodRoadie(Object testObject, Method testMethod, TestMethod jUnitTestMethod, RunNotifier notifier, Description description) {
-            super(testObject, jUnitTestMethod, notifier, description);
-            this.testObject = testObject;
-            this.testMethod = testMethod;
-        }
-
-
-        /**
-         * Overriden JUnit4 method to be able to call {@link TestListener#afterTestTearDown}.
-         */
-        @Override
-        public void runBeforesThenTestThenAfters(Runnable test) {
-            try {
-                getTestListener().beforeTestSetUp(testObject, testMethod);
-            } catch (Throwable t) {
-                addFailure(t);
-            }
-            if (throwable == null) {
-                super.runBeforesThenTestThenAfters(test);
-            }
-            try {
-                getTestListener().afterTestTearDown(testObject, testMethod);
-            } catch (Throwable t) {
-                addFailure(t);
-            }
-        }
-
-
-        @Override
-        protected void runTestMethod() {
-            try {
-                getTestListener().beforeTestMethod(testObject, testMethod);
-            } catch (Throwable t) {
-                addFailure(t);
-            }
-            if (throwable == null) {
-                super.runTestMethod();
-            }
-            try {
-                getTestListener().afterTestMethod(testObject, testMethod, throwable);
-            } catch (Throwable t) {
-                addFailure(t);
-            }
-        }
-
-
-        /**
-         * Registers a test failure
-         *
-         * @param t The exception, not null
-         */
-        @Override
-        protected void addFailure(Throwable t) {
-            // first exception is typically the most meaningful, so ignore second exception
-            if (throwable == null) {
-                throwable = t;
-                super.addFailure(t);
-            }
-        }
-    }
-
-    protected TestListener getTestListener() {
-        return getUnitils().getTestListener();
-    }
-
-
-    /**
-     * Returns the default singleton instance of Unitils
-     *
-     * @return the Unitils instance, not null
-     */
-    protected Unitils getUnitils() {
-        return Unitils.getInstance();
-    }
-
-    protected MethodRoadie createMethodRoadie(Object testObject, Method testMethod, TestMethod jUnitTestMethod, RunNotifier notifier, Description description) {
-        return new CustomizedUnitilsJUnit4Runner.TestListenerInvokingMethodRoadie(testObject, testMethod, jUnitTestMethod, notifier, description);
-    }
-
-}
-
-
-class InterceptingListener extends RunListener {
-
-    private Failure failure = null;
-
-    @Override
-    public void testFailure(Failure failure) throws Exception {
-        this.failure = failure;
-    }
-
-    public boolean isFailed() {
-        return this.failure != null;
-    }
-
-    public Failure getFailure() {
-        return this.failure;
-    }
-
 
 }

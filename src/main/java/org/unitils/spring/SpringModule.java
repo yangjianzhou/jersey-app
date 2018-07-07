@@ -40,10 +40,6 @@ public class SpringModule implements Module {
     /* Manager for storing and creating spring application contexts */
     private ApplicationContextManager applicationContextManager;
 
-    /* TestContext used by the spring testcontext framework*/
-    //    private TestContext testContext;
-    private LoadTime loadTime;
-
     private  static ApplicationContext applicationContext;
 
     public static void setApplicationContext(ApplicationContext applicationContext) {
@@ -455,15 +451,12 @@ public class SpringModule implements Module {
      */
     protected class SpringTestListener extends TestListener {
 
-
         @Override
         public void beforeTestSetUp(Object testObject, Method testMethod) {
             if (findLoadTime(testObject.getClass()) == LoadTime.METHOD || applicationContext == null) {
                 initialize(testObject);
             }
-
         }
-
 
         /**
          * @see org.unitils.core.TestListener#afterTestTearDown(java.lang.Object, java.lang.reflect.Method)
@@ -475,8 +468,6 @@ public class SpringModule implements Module {
             }
 
         }
-
-
 
     }
 

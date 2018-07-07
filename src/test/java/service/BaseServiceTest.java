@@ -1,6 +1,6 @@
 package service;
 
-import com.yangjianzhou.util.CustomizedUnitilsJUnit4Runner;
+import com.yangjianzhou.util.UnitilsBlockJUnit4ClassRunner;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.unitils.database.annotations.Transactional;
@@ -18,7 +18,7 @@ import org.unitils.spring.annotation.SpringApplicationContext;
 //@TestExecutionListeners({SpringUnitilsAdaptorTestExecutionListener.class})
 @SpringApplicationContext({"classpath:applicationContext-test.xml", "classpath:dataSource-test.xml"})
 @Transactional(value = TransactionMode.ROLLBACK)
-@RunWith(CustomizedUnitilsJUnit4Runner.class)
+@RunWith(UnitilsBlockJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:applicationContext-test.xml", "classpath:dataSource-test.xml"})
 public abstract class BaseServiceTest /*extends UnitilsJUnit4*/ {
 }
