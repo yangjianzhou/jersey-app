@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * point :
  * 1.need update
- * "SpringModule.applicationContextFactory.implClassName" -> "org.unitils.spring.util.ClassPathXmlApplicationContextFactory"
+ * "SpringBootModule.applicationContextFactory.implClassName" -> "org.unitils.spring.util.ClassPathXmlApplicationContextFactory"
  *
  * AnnotationConfigWebApplicationContext
  */

@@ -31,7 +31,7 @@ import static org.unitils.util.AnnotationUtils.getMethodsAnnotatedWith;
 import static org.unitils.util.PropertyUtils.getInstance;
 import static org.unitils.util.ReflectionUtils.*;
 
-public class SpringModule implements Module {
+public class SpringBootModule implements Module {
 
 
     /* Property key of the class name of the application context factory */
@@ -43,7 +43,7 @@ public class SpringModule implements Module {
     private  static ApplicationContext applicationContext;
 
     public static void setApplicationContext(ApplicationContext applicationContext) {
-        SpringModule.applicationContext = applicationContext;
+        SpringBootModule.applicationContext = applicationContext;
     }
 
     /**

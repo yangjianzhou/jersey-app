@@ -2,11 +2,13 @@ package com.yangjianzhou.util;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.stereotype.Component;
-import org.unitils.spring.SpringModule;
+import org.springframework.context.annotation.Configuration;
+import org.unitils.spring.SpringBootModule;
 
-@Component
+@Configuration
+@ConditionalOnClass(BootUnitilsJUnit4ClassRunner.class)
 public class ConfigurableApplicationContextAware implements InitializingBean {
 
     @Autowired
@@ -14,6 +16,6 @@ public class ConfigurableApplicationContextAware implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        SpringModule.setApplicationContext(configurableApplicationContext);
+        SpringBootModule.setApplicationContext(configurableApplicationContext);
     }
 }

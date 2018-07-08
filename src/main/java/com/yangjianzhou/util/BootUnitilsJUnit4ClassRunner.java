@@ -32,7 +32,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
-public class UnitilsBlockJUnit4ClassRunner extends BlockJUnit4ClassRunner {
+public class BootUnitilsJUnit4ClassRunner extends BlockJUnit4ClassRunner {
 
     private final TestContextManager testContextManager;
 
@@ -48,7 +48,7 @@ public class UnitilsBlockJUnit4ClassRunner extends BlockJUnit4ClassRunner {
         Assert.state(ClassUtils.isPresent("org.junit.internal.Throwables", SpringJUnit4ClassRunner.class.getClassLoader()),
                 "SpringJUnit4ClassRunner requires JUnit 4.12 or higher.");
 
-        Method method = ReflectionUtils.findMethod(UnitilsBlockJUnit4ClassRunner.class, "withRules",FrameworkMethod.class, Object.class, Statement.class);
+        Method method = ReflectionUtils.findMethod(BootUnitilsJUnit4ClassRunner.class, "withRules",FrameworkMethod.class, Object.class, Statement.class);
         Assert.state(method != null, "SpringJUnit4ClassRunner requires JUnit 4.12 or higher");
         ReflectionUtils.makeAccessible(method);
         withRulesMethod = method;
@@ -62,7 +62,7 @@ public class UnitilsBlockJUnit4ClassRunner extends BlockJUnit4ClassRunner {
      * @param clazz the test class to be run
      * @see #createTestContextManager(Class)
      */
-    public UnitilsBlockJUnit4ClassRunner(Class<?> clazz) throws InitializationError {
+    public BootUnitilsJUnit4ClassRunner(Class<?> clazz) throws InitializationError {
         super(clazz);
         if (logger.isDebugEnabled()) {
             logger.debug("SpringJUnit4ClassRunner constructor called with [" + clazz + "]");
